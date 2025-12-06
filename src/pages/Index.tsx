@@ -174,25 +174,6 @@ export default function Index() {
               </Button>
             </div>
           </div>
-
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
-            <div className="animate-slide-up">
-              <div className="text-4xl font-bold gradient-text">200+</div>
-              <div className="text-sm text-muted-foreground">Фотосессий</div>
-            </div>
-            <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl font-bold gradient-text">150+</div>
-              <div className="text-sm text-muted-foreground">Клиентов</div>
-            </div>
-            <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl font-bold gradient-text">5</div>
-              <div className="text-sm text-muted-foreground">Лет опыта</div>
-            </div>
-            <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
-              <div className="text-4xl font-bold gradient-text">100%</div>
-              <div className="text-sm text-muted-foreground">Красоты</div>
-            </div>
-          </div>
         </div>
       </section>
 
