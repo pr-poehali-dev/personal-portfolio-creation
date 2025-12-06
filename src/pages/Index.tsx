@@ -19,68 +19,68 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: 'E-commerce Platform',
+    title: 'Свадебная фотосессия',
     category: 'web',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-    description: 'Современный интернет-магазин с интуитивным UX'
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80',
+    description: 'Романтическая церемония в классическом стиле'
   },
   {
     id: 2,
-    title: 'Mobile Banking App',
+    title: 'Портретная съемка',
     category: 'mobile',
-    image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80',
-    description: 'Мобильное приложение для управления финансами'
+    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80',
+    description: 'Индивидуальная фотосессия в студии'
   },
   {
     id: 3,
-    title: 'Brand Identity',
+    title: 'Семейная съемка',
     category: 'branding',
-    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',
-    description: 'Комплексная айдентика для стартапа'
+    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80',
+    description: 'Теплая семейная фотосессия на природе'
   },
   {
     id: 4,
-    title: 'SaaS Dashboard',
+    title: 'Love Story',
     category: 'web',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
-    description: 'Аналитическая панель для B2B-сервиса'
+    image: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80',
+    description: 'История любви в городских локациях'
   },
   {
     id: 5,
-    title: 'Fitness Tracker',
+    title: 'Детская фотосессия',
     category: 'mobile',
-    image: 'https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?w=800&q=80',
-    description: 'Приложение для отслеживания тренировок'
+    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80',
+    description: 'Искренние эмоции малышей'
   },
   {
     id: 6,
-    title: 'Cafe Branding',
+    title: 'Фэшн съемка',
     category: 'branding',
-    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
-    description: 'Визуальная концепция для кофейни'
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80',
+    description: 'Стильная фотосессия для портфолио'
   }
 ];
 
 const services = [
   {
-    icon: 'Layout',
-    title: 'Web Design',
-    description: 'Создание современных и адаптивных веб-интерфейсов с фокусом на пользовательский опыт'
+    icon: 'Heart',
+    title: 'Свадебная съемка',
+    description: 'Запечатлею самый важный день вашей жизни с вниманием к каждой детали и эмоции'
   },
   {
-    icon: 'Smartphone',
-    title: 'Mobile Apps',
-    description: 'Разработка мобильных приложений для iOS и Android с нативным UX'
+    icon: 'User',
+    title: 'Портретная фотография',
+    description: 'Индивидуальные и семейные портреты, раскрывающие вашу уникальность'
   },
   {
-    icon: 'Palette',
-    title: 'Branding',
-    description: 'Разработка фирменного стиля, логотипов и визуальной айдентики'
+    icon: 'Camera',
+    title: 'Репортажная съемка',
+    description: 'Живые кадры с мероприятий, событий и торжеств в естественной атмосфере'
   },
   {
-    icon: 'Code',
-    title: 'Development',
-    description: 'Фронтенд и фулстек разработка с использованием современных технологий'
+    icon: 'Star',
+    title: 'Коммерческая съемка',
+    description: 'Профессиональные фото для бизнеса, каталогов и рекламных кампаний'
   }
 ];
 
@@ -136,7 +136,7 @@ export default function Index() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold gradient-text">Portfolio</h1>
+            <h1 className="text-2xl font-bold gradient-text">Фотограф</h1>
             <div className="hidden md:flex gap-8">
               <button onClick={() => scrollToSection('home')} className="text-sm font-medium hover:text-primary transition-colors">
                 Главная
@@ -159,11 +159,11 @@ export default function Index() {
         <div className="container mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
-              Создаю цифровые<br />продукты
+              Запечатлеваю<br />моменты жизни
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Современный дизайн и разработка для вашего бизнеса. 
-              Более 50 успешных проектов за 3 года работы.
+              Профессиональная фотосъемка для ваших особенных событий. 
+              Более 200 довольных клиентов за 5 лет работы.
             </p>
             <div className="flex gap-4 justify-center">
               <Button onClick={() => scrollToSection('portfolio')} size="lg" className="gradient-primary hover:opacity-90 transition-opacity">
@@ -177,20 +177,20 @@ export default function Index() {
 
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
             <div className="animate-slide-up">
-              <div className="text-4xl font-bold gradient-text">50+</div>
-              <div className="text-sm text-muted-foreground">Проектов</div>
+              <div className="text-4xl font-bold gradient-text">200+</div>
+              <div className="text-sm text-muted-foreground">Фотосессий</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl font-bold gradient-text">30+</div>
+              <div className="text-4xl font-bold gradient-text">150+</div>
               <div className="text-sm text-muted-foreground">Клиентов</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl font-bold gradient-text">3</div>
-              <div className="text-sm text-muted-foreground">Года опыта</div>
+              <div className="text-4xl font-bold gradient-text">5</div>
+              <div className="text-sm text-muted-foreground">Лет опыта</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
               <div className="text-4xl font-bold gradient-text">100%</div>
-              <div className="text-sm text-muted-foreground">Качество</div>
+              <div className="text-sm text-muted-foreground">Красоты</div>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function Index() {
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Портфолио</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Избранные проекты, демонстрирующие мой подход к дизайну и разработке
+            Избранные работы, демонстрирующие мой взгляд на искусство фотографии
           </p>
 
           <div className="flex flex-wrap gap-3 justify-center mb-12">
@@ -211,7 +211,7 @@ export default function Index() {
                 variant={activeCategory === category ? 'default' : 'outline'}
                 className={activeCategory === category ? 'gradient-primary' : 'hover:scale-105 transition-transform'}
               >
-                {category === 'all' ? 'Все' : category === 'web' ? 'Web' : category === 'mobile' ? 'Mobile' : 'Branding'}
+                {category === 'all' ? 'Все' : category === 'web' ? 'Свадьбы' : category === 'mobile' ? 'Портреты' : 'Семьи'}
               </Button>
             ))}
           </div>
@@ -236,7 +236,7 @@ export default function Index() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
-                    {item.category}
+                    {item.category === 'web' ? 'Свадьба' : item.category === 'mobile' ? 'Портрет' : 'Семья'}
                   </div>
                 </CardContent>
               </Card>
@@ -249,7 +249,7 @@ export default function Index() {
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Услуги</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Комплексные решения для вашего цифрового присутствия
+            Профессиональная фотосъемка для любых целей и событий
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -329,7 +329,7 @@ export default function Index() {
                 <div className="flex items-center gap-3">
                   <Icon name="Phone" size={20} className="text-primary" />
                   <a href="tel:+79502855685" className="hover:text-primary transition-colors">
-                    +7 (950) 285-56-85
+                    +7 (950) 285 56-85
                   </a>
                 </div>
               </div>
@@ -342,19 +342,18 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Portfolio</h3>
-              <p className="text-background/70">© 2024 Все права защищены</p>
+              <h3 className="text-2xl font-bold mb-2">Фотограф</h3>
+              <p className="text-background/70">© 2025 Все права защищены</p>
             </div>
 
             <div className="flex gap-6">
-              <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+              <a href="https://t.me/pupukaka228666" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                 <Icon name="Send" size={24} />
               </a>
-              <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                <Icon name="Github" size={24} />
-              </a>
-              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                <Icon name="Linkedin" size={24} />
+              <a href="https://vk.com/id706646370" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.15 14.97h-1.34c-.7 0-.91-.56-2.16-1.81-1.09-1.04-1.58-1.18-1.85-1.18-.38 0-.49.11-.49.63v1.65c0 .45-.14.72-1.34.72-1.99 0-4.21-1.21-5.77-3.46C3.51 10.3 3 8.04 3 7.59c0-.27.11-.52.63-.52h1.34c.47 0 .65.21.83.72.93 2.69 2.49 5.04 3.13 5.04.24 0 .35-.11.35-.72V9.38c-.07-1.19-.7-1.29-.7-1.71 0-.22.18-.43.47-.43h2.11c.39 0 .54.22.54.68v3.66c0 .39.18.54.29.54.24 0 .43-.15.87-.59 1.36-1.54 2.34-3.92 2.34-3.92.13-.27.34-.52.81-.52h1.34c.56 0 .68.29.56.68-.21.96-2.47 4.15-2.47 4.15-.2.33-.28.48 0 .85.2.28.87.85 1.32 1.37.82.9 1.45 1.65 1.62 2.18.17.52-.09.78-.61.78z"/>
+                </svg>
               </a>
             </div>
           </div>
