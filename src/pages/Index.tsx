@@ -73,14 +73,9 @@ const services = [
     description: 'Индивидуальные и семейные портреты, раскрывающие вашу уникальность'
   },
   {
-    icon: 'Camera',
-    title: 'Репортажная съемка',
-    description: 'Живые кадры с мероприятий, событий и торжеств в естественной атмосфере'
-  },
-  {
-    icon: 'Star',
-    title: 'Коммерческая съемка',
-    description: 'Профессиональные фото для бизнеса, каталогов и рекламных кампаний'
+    icon: 'Trees',
+    title: 'Съемка на природе',
+    description: 'Фотосессии в живописных природных локациях с использованием естественного света'
   }
 ];
 
@@ -214,12 +209,7 @@ export default function Index() {
                     <p className="text-white text-sm">{item.description}</p>
                   </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
-                    {item.category === 'web' ? 'Свадьба' : item.category === 'mobile' ? 'Портрет' : 'Семья'}
-                  </div>
-                </CardContent>
+
               </Card>
             ))}
           </div>
@@ -233,7 +223,7 @@ export default function Index() {
             Профессиональная фотосъемка для любых целей и событий
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card 
                 key={service.title}
@@ -300,20 +290,7 @@ export default function Index() {
                 </Button>
               </form>
 
-              <div className="mt-8 pt-8 border-t space-y-4">
-                <div className="flex items-center gap-3">
-                  <Icon name="Mail" size={20} className="text-primary" />
-                  <a href="mailto:myrlinmag@gmail.com" className="hover:text-primary transition-colors">
-                    myrlinmag@gmail.com
-                  </a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Icon name="Phone" size={20} className="text-primary" />
-                  <a href="tel:+79502855685" className="hover:text-primary transition-colors">
-                    +7 (950) 285 56-85
-                  </a>
-                </div>
-              </div>
+
             </CardContent>
           </Card>
         </div>
@@ -325,6 +302,16 @@ export default function Index() {
             <div>
               <h3 className="text-2xl font-bold mb-2">Фотограф</h3>
               <p className="text-background/70">© 2025 Все права защищены</p>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <a href="tel:+79502855685" className="hover:opacity-70 transition-opacity text-sm">
+                +7 (950) 285 56-85
+              </a>
+              <span className="text-background/50">•</span>
+              <a href="mailto:myrlinmag@gmail.com" className="hover:opacity-70 transition-opacity text-sm">
+                myrlinmag@gmail.com
+              </a>
             </div>
 
             <div className="flex gap-6">
